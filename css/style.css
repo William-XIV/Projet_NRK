@@ -8,7 +8,7 @@ body{
 }
 
 h1,h2,h3{
-    color: white;
+    color: rgb(222, 159, 71);
     margin: 0;
 }
 
@@ -19,7 +19,7 @@ h1{
 
 header{
     background-color: black;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 header div{
@@ -74,7 +74,11 @@ img{
 }
 
 main{
-background-color: orange;
+    background: url(../asset/RC_\ Template.jpg);
+}
+
+main img, video{
+    display: block;
 }
 
 section p{
@@ -83,17 +87,78 @@ section p{
 }
 
 section h3{
-    background-color: black;
+    background-color: rgb(72, 71, 71);
     font-size: 3rem;
 }
 
 main h2{
     text-align: center;
     font-size: 4rem;
-    padding: 4rem;
+    padding: 0.7rem;
 }
 
 main section{
-    margin-left: 30rem;
-    margin-right: 30rem;
+    margin-left: 40rem;
+    margin-right: 40rem;
+}
+
+@media screen and (max-width: 70rem){
+    
+    body{
+        margin: 0;
+    }
+
+    h1{
+        font-size: 2.7rem;
+        padding-right: 0rem;
+        padding: 1.8rem;
+    }
+
+    h1,h2,h3{
+        margin: 0;
+    }
+
+    div ol{
+        padding-left: 0;
+    }
+
+    div img{
+        width: 0rem;
+        margin: 0;
+    }
+
+    ol li{
+        display: block;
+        margin: 0.5rem;
+        padding: 0;
+        width: 25rem;
+    }
+
+    ul li{
+        display: block;
+        margin: 0;
+    }
+
+    main section{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    video{
+        width: 26rem;
+    }
+
+    main h3{
+        font-size: 2rem;
+    }
+
+    section p{
+        font-size: 1rem;
+    }
+
+    main h2{
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+    }
 }
